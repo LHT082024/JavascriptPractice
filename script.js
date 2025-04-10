@@ -6,11 +6,19 @@ let previousOccupations = ["Testing subject for robot spec ops divison", "reserv
 const campaginShip = "PlaceholderName"
 let currentOccupation = "Chef on the ship: " + campaginShip;
 
+let obj = {
+     fullname: "C11A7321T",
+ designation : "CAT",
+let age = 5;
+let previousOccupations = ["Testing subject for robot spec ops divison", "reserve military personal for spec ops", "Political assassin"];
+const campaginShip = "PlaceholderName"
+let currentOccupation = "Chef on the ship: " + campaginShip;
+}
 
-fetch("./test.json")
+fetch("./cat.json")
   .then((res) => res.json())
   .then((data) => {
-    document.getElementById("Ship").innerText = "ship:" +  data[0];
+    document.getElementById("Ship").innerText = "ship:" +  data.;
   })
   .catch((err) => console.error("Failed to load JSON:", err));
 
