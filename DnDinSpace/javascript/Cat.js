@@ -16,7 +16,7 @@ fetch("./Json/cat.json")
     occupation.innerText = "Occupation: " + data.currentOccupation
     ship.innerText = "Ship: " +  data.campaginShip;
   })
-  .catch((err) => console.error("Failed to load JSON:", err));
+  // .catch((err) => console.error("Failed to load JSON:", err));
 
 
 
