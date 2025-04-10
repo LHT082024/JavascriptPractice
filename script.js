@@ -5,6 +5,6 @@ let previousOccupations = ["Testing subject for robot spec ops divison", "reserv
 const campaginShip = "PlaceholderName"
 let currentOccupation = "Crew on the ship: " + campaginShip;
 
-document.getElementById("TxT").innerHTML = currentOccupation;
+document.getElementById("TxT").innerHTML = fullname;
 
 console.log(currentOccupation);
