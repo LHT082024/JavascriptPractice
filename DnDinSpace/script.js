@@ -1,9 +1,12 @@
+//fetching html document
+const ship = document.querySelector("#Ship")
 
-//fetching api
+
+//fetching Json
 fetch("./Json/cat.json")
   .then((res) => res.json())
   .then((data) => {
-    document.getElementById("Ship").innerText = "ship: " +  data.currentOccupation;
+    ship.innerText = "ship: " +  data.currentOccupation;
   })
   .catch((err) => console.error("Failed to load JSON:", err));
 
