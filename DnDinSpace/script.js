@@ -1,6 +1,6 @@
 
 //fetching api
-fetch("./cat.json")
+fetch("./Json/cat.json")
   .then((res) => res.json())
   .then((data) => {
     document.getElementById("Ship").innerText = "ship: " +  data.currentOccupation;
