@@ -8,7 +8,7 @@ const ship = document.querySelector("#Ship")
 
 //fetching Json
 //placing json objects inside html tags
-fetch("./Json/cat.json")
+fetch("/DnDinSpace/Json/cat.json")
   .then((res) => res.json())
   .then((data) => {
     names.innerText = "Name: " + data.fullname + "||" + " Designation: " + data.designation;
@@ -17,6 +17,6 @@ fetch("./Json/cat.json")
     ship.innerText = "Ship: " +  data.campaginShip;
   })
   // .catch((err) => console.error("Failed to load JSON:", err));
-
+// fetch("./Json/foxy.json")
 
 
