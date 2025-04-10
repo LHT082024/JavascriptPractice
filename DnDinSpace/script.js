@@ -1,6 +1,7 @@
 //fetching html document
 const names = document.querySelector("#Name")
-const age = document.querySelector("#Occupation")
+const age = document.querySelector("#Age")
+const occupation = document.querySelector("#Occupation")
 const ship = document.querySelector("#Ship")
 
 
@@ -9,15 +10,12 @@ const ship = document.querySelector("#Ship")
 fetch("./Json/cat.json")
   .then((res) => res.json())
   .then((data) => {
-    names.innerText = "name: " + data.fullname + "||" + " designation: " + data.designation;
-    age.innerText = "age: " + data.age;
-    ship.innerText = "ship: " +  data.currentOccupation;
+    names.innerText = "Name: " + data.fullname + "||" + " Designation: " + data.designation;
+    age.innerText = "Age: " + data.age;
+    occupation.innerText = "Occupation: " + data.currentOccupation
+    ship.innerText = "Ship: " +  data.campaginShip;
   })
   .catch((err) => console.error("Failed to load JSON:", err));
-
-// document.getElementById("Name").innerHTML = fullname + " designation: " + designation;
-// document.getElementById("Age").innerHTML = age;
-// document.getElementById("Occupation").innerHTML = currentOccupation;
 
 
 
