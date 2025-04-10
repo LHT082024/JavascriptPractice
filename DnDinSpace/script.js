@@ -7,6 +7,7 @@ const ship = document.querySelector("#Ship")
 
 
 //fetching Json
+//placing json objects inside html tags
 fetch("./Json/cat.json")
   .then((res) => res.json())
   .then((data) => {
