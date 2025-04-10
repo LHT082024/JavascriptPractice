@@ -1,30 +1,15 @@
 
-const fullname = "C11A7321T";
-const designation = "CAT";
-let age = 5;
-let previousOccupations = ["Testing subject for robot spec ops divison", "reserve military personal for spec ops", "Political assassin"];
-const campaginShip = "PlaceholderName"
-let currentOccupation = "Chef on the ship: " + campaginShip;
-
-let obj = {
-     fullname: "C11A7321T",
- designation : "CAT",
-let age = 5;
-let previousOccupations = ["Testing subject for robot spec ops divison", "reserve military personal for spec ops", "Political assassin"];
-const campaginShip = "PlaceholderName"
-let currentOccupation = "Chef on the ship: " + campaginShip;
-}
-
+//fetching api
 fetch("./cat.json")
   .then((res) => res.json())
   .then((data) => {
-    document.getElementById("Ship").innerText = "ship:" +  data.;
+    document.getElementById("Ship").innerText = "ship: " +  data.currentOccupation;
   })
   .catch((err) => console.error("Failed to load JSON:", err));
 
-document.getElementById("Name").innerHTML = fullname + " designation: " + designation;
-document.getElementById("Age").innerHTML = age;
-document.getElementById("Occupation").innerHTML = currentOccupation;
+// document.getElementById("Name").innerHTML = fullname + " designation: " + designation;
+// document.getElementById("Age").innerHTML = age;
+// document.getElementById("Occupation").innerHTML = currentOccupation;
 
 
 
