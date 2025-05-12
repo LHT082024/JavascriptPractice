@@ -32,5 +32,13 @@ const logCompliment = function(firstName){
 
 logCompliment("Shift");
 
+//this is the same as-
+const lordify = function(firstName) {
+    return `${firstName} of dragonstone`;
+};
 
-// console.log(`${email}`);
+//-this
+const lordify2 = firstName => `${firstName} of dragonstone`;
+
+console.log(lordify("Salem"));
+console.log(lordify2("Salem"));
