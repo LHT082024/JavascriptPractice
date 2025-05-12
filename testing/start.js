@@ -42,3 +42,10 @@ const lordify2 = firstName => `${firstName} of dragonstone`;
 
 console.log(lordify("Salem"));
 console.log(lordify2("Salem"));
+
+
+const [firstTitan] = ["Ronin", "Northstar", "Scorch"]
+console.log(firstTitan)
+
+const [, , lastTitan] = ["Ronin", "Northstar", "Scorch"]
+console.log(lastTitan)
